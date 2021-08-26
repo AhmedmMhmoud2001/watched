@@ -10,6 +10,7 @@ body {
     background-color: #000 !important;
     color: white;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -75,7 +76,6 @@ header a select{
     border-radius: 5px;
     font-size: 18px !important;
     font-weight: 500;
-    color: #fff;
     border: none;
     outline: none;
 }
@@ -126,7 +126,7 @@ header  a select option {
     font-weight: 600;
     color: #fff;
     letter-spacing: 2px;
-    width: 80%;
+    width: 100%;
 }
 
 .banner .box .heading p {
@@ -405,7 +405,7 @@ footer .row1 div div{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 50px 100px;
+    padding: 50px 60px;
     
 }
 
@@ -450,7 +450,7 @@ footer .row1 div div{
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 50px 100px;
+    padding: 50px 60px;
 }
 
 .h1h11h333 {
@@ -526,6 +526,32 @@ footer .col-12 {
 
 
 @media only screen and (max-width: 700px) {
+    .LOGO {
+
+        font-size: 30px ;
+        font-weight: 900;
+        padding-left: 20px;
+    }
+    
+    
+    
+    .signup{
+        padding: 5px 10px !important;
+        font-size: 15px !important;
+        
+    }
+    header a select{
+        padding: 4px 8px;
+        
+        font-size: 15px !important;
+        font-weight: 500;
+        
+    }
+
+
+
+
+
     .banner .box .heading  h2 {
         font-size: 22px;
     }
@@ -684,26 +710,29 @@ footer .col-12 {
 .pg-singup div:nth-child(6) label{
     width: 85%;
     font-size: 15px;
+    padding-bottom: 20px;
 }
 
-.signupbtn {
-    border : 1px solid var(--redorangr);
+
+.signupbtn{
     background: var(--redorangr);
-    
+    border : 1px solid var(--redorangr);
     border-radius: 5px;
-    height: 50px;
-    width: 350px;
-    margin: 25px !important;
-    overflow: hidden;
-    text-align: center;
     font-size: 25px;
-    padding: 10px ;
-    cursor: pointer;
-}
-.signupbtn a {
     color: white;
+    margin: 25px !important;
+    padding: 10px 130px;
     text-decoration: none;
+    cursor: pointer;
     
+}
+#sss {
+    display: none;
+}
+#error {
+ background: red;
+ font-size: 30px;
+ color: #fff;
 }
 
 .pg-singup div:nth-child(8) {
