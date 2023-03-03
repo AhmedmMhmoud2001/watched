@@ -106,10 +106,11 @@ header  a select option {
 
 .banner .box {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
+    width: 80%;
 }
 
 
@@ -616,7 +617,6 @@ footer .col-12 {
         font-weight: 500;
         
     }
-    
 .mainsearch .search {
     height: 35px;
     width: 70%;
@@ -627,7 +627,7 @@ footer .col-12 {
 .mainsearch .submit{
     width: 30%;
     height: 35px; 
-    font-size: 16px;  
+    font-size: 14px;  
 }
 }
 
@@ -756,14 +756,16 @@ footer .col-12 {
     border-radius: 5px;
     font-size: 25px;
     color: white;
-    margin: 25px !important;
-    padding: 10px 130px;
     text-decoration: none;
     cursor: pointer;
+    width:80%;
+    margin: 10%;
     
 }
 #sss {
     display: none;
+    font-size: 18px;
+    text-align: center;
 }
 #error {
  background: red;
