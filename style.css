@@ -616,6 +616,19 @@ footer .col-12 {
         font-weight: 500;
         
     }
+    
+.mainsearch .search {
+    height: 35px;
+    width: 70%;
+    padding-left: 10px;
+    font-size: 16px;
+    
+}
+.mainsearch .submit{
+    width: 30%;
+    height: 35px; 
+    font-size: 16px;  
+}
 }
 
 
