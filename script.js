@@ -3,6 +3,7 @@ let fname=document.getElementById("fname");
 let email=document.getElementById("email");
 let password=document.getElementById("password");
 let sss =document.getElementById("sss");
+let form =document.getElementById("form");
 let yes= document.getElementById("yes");
 let error=document.getElementById("error");
 
@@ -16,17 +17,19 @@ function myFunction(){
         sss.style.display = "none";
         error.innerHTML="Enter Your email "
     }
-    else if(password.value===""||password.value==null ||password.value.length <=15){
+    else if(password.value===""||password.value==null ||password.value.length <=7){
         sss.style.display = "none";
-        error.innerHTML="Enter Your password min 15 "
+        error.innerHTML="Enter Your password min 7 "
     }
-    else if(password.value.length > 15){
+    else if(password.value.length > 7){
+        form.style.display = "none";
         sss.style.display = "block";
-        error.innerHTML=" "
+        error.innerHTML=""
     }
-    else
+    else{
+    form.style.display = "none";
     sss.style.display = "block";
-
+    }
     if( password.value.length > 3){
         document.getElementById("span1").style.backgroundColor = "red";
        
@@ -58,7 +61,6 @@ var BASE_URL = "https://api.themoviedb.org/3";
 var API_URL = BASE_URL+"/discover/movie?sort_by=popularity.desc&"+ API_Key;
 var IMG_URL = "https://image.tmdb.org/t/p/w500";
 var searchURL ="https://api.themoviedb.org/3/search/movie?api_key=b14e0d0a5744eadbded54b795209fc69";
-const form =document.getElementById("form");
 const search=document.getElementById("search");
 const main=document.getElementById("main");
 
